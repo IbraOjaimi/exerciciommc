@@ -36,7 +36,7 @@ console.log("Digite o primeiro número para saber o mmmc");
                return num1;
             }
             var resultado1 = calcularMDC(num1, num2);
-            console.log(resultado1)
+            console.log(resultado1);
 
     
 
