@@ -7,6 +7,7 @@ console.log("Digite o primeiro número para saber o mmmc");
 
         console.log("Digite o segundo número:")
         process.stdin.once('data', function(data){
+            num2=Number(data)
             function calcularMMC(num1, num2){
                 num2=Number(data)
                 var resto, x, y;
@@ -21,9 +22,23 @@ console.log("Digite o primeiro número para saber o mmmc");
             
             return (num1*num2)/x;
             }
-            var resultado =  calcularMMC(5, 10);
+            var resultado =  calcularMMC(num1, num2);
             console.log(resultado);
-            process.exit();
+
+            function calcularMDC(num1, num2){
+               var resto1;
+               do {
+                resto1 = num1 % num2;
+                num1 = num2;
+                num2 = resto1;
+            
+               } while (resto1 != 0);
+               return num1;
+            }
+            var resultado1 = calcularMDC(num1, num2);
+            console.log(resultado1)
+
+    
 
 
 
