@@ -22,8 +22,9 @@ console.log("Digite o primeiro número para saber o mmmc");
             return (num1*num2)/x;
             }
             var resultado =  calcularMMC(5, 10);
-            console.log(resultado)
-            process.exit()
+            console.log(resultado);
+            process.exit();
+
 
 
         })
